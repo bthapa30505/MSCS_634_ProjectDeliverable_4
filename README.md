@@ -8,11 +8,11 @@ Also, this dateset contains a diverse set of academic, personal, and socioeconom
 
 Dataset link: https://www.kaggle.com/datasets/anassarfraz13/student-success-factors-and-insights
 
-# Data cleaning and Visulization
+## Data cleaning and Visulization
 For the data cleaning steps, I initially ensured that the missing information were filled by using imputation technique. I filled those data points with mean or median based on datatype. Secondly, I also ensured there were no duplicate rows present. And lastly,
 I calculated IQR ranges to help understand the outliers in the dataset. However I could not find critical outliers in the dataset apart from the student score itself. After that I used the cleaned data to create various plots to visualize and understand the dataset in depth.
 
-# Dataset Summary:
+## Dataset Summary:
 
 Shape: (6607, 20)
 
@@ -43,12 +43,12 @@ Shape: (6607, 20)
      - Attendance: 0 outliers (0.0%)
      - Sleep_Hours: 0 outliers (0.0%)
 
-# Challenges Faced during Data cleaning and Visulization
+## Challenges Faced during Data cleaning and Visulization
 
 Throughout this project,I faced several technical challenges that required careful problem-solving and iterative refinement. One significant obstacle was handling missing values across multiple categorical columns (Teacher_Quality, Parental_Education_Level, and Distance_from_Home), which required implementing appropriate imputation strategies using mode values for categorical data. Another critical challenge emerged during outlier detection and removal, where I faced an IndexingError due to pandas Series index misalignment when creating boolean masks for filtering outlier rows. I was able to resolve this by explicitly setting the Series index to match the DataFrame index using `pd.Series(False, index=df.index)` rather than relying on default integer indexing.
 
 
-# EDA Findings:
+## EDA Findings:
 
 The exploratory data analysis (EDA) of the student performance dataset provided meaningful insights into the factors influencing academic outcomes. The dataset was found to be well-structured with minimal missing or inconsistent data, ensuring reliable analysis. Key predictors such as Previous Scores, Hours Studied, and Attendance showed strong correlations with Exam Score, highlighting their significance in predicting performance. Additionally, the interactions between categorical and numerical features revealed complex dependencies that could further enhance model accuracy. Overall, these insights serve as a solid foundation for developing robust predictive models aimed at forecasting student exam performance with high precision for the future project deliverables.
 
@@ -76,10 +76,10 @@ Another challenge I faced was understanding why Ridge and Lasso regularization s
 
 ## Key insights from classification, clustering, and pattern mining.
 
-Classification Insights: Predictive Intervention
+### Classification Insights: Predictive Intervention
 The analysis revealed that the Tuned Naïve Bayes model achieved the highest performance among classification models, with an accuracy of 0.9281 and an F1 score of 0.9536. This makes it a robust tool for predicting whether a student is likely to achieve a high or low exam score. By applying this model to historical or current student data, such as previous scores, attendance, and demographics, educational institutions can identify students at high risk of low performance long before exams occur. This predictive capability enables targeted interventions, allowing schools to prioritize resources such as remedial classes, counseling, tutoring, or parent engagement. By shifting from reactive to proactive support, institutions can maximize the effectiveness of their academic assistance programs.
 
-Clustering Insights: Differentiated Support Groups
+### Clustering Insights: Differentiated Support Groups
 K-Means clustering revealed two distinct student groups primarily differentiated by previous scores and family income, indicating a strong link between socioeconomic factors and academic performance.
 
 Cluster 0 (Lower Previous Scores, Low Family Income): This group contains the lowest percentage of high performers (20%). Interventions for these students could focus on addressing foundational skill gaps and providing additional material or financial resources.
