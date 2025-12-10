@@ -88,7 +88,7 @@ Cluster 1 (Higher Previous Scores, Medium Family Income): While performing bette
 
 These clusters provide a clear, data-driven basis for resource allocation, enabling the school to distribute scholarships, tutoring slots, or counseling time where it is needed most, ensuring equitable support.
 
-Association Rule Insights: Causal Factors and Policy
+### Association Rule Insights: Causal Factors and Policy
 Association rule mining highlighted strong conditional relationships between various factors and student performance outcomes.
 
 Risk Mitigation: High-confidence rules, such as Attendance_Low ⇒ Exam_Score_Low (98.16% confidence, 1.17 lift), indicate nearly certain predictors of poor performance. This underscores the importance of attendance as a non-negotiable factor in academic success. Schools should implement or strengthen policies to monitor attendance closely, such as mandatory check-ins or automated alerts for parents and counselors.
